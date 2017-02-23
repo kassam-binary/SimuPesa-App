@@ -114,8 +114,12 @@ int main (){
 
 //body of VAT function
  float vatCalculating (float amount,float vat,float charge){
+ 	float addVatPercentage, vatAmmount;
+ 	addVatPercentage = amount * vat;
+ 	vatAmmount = addVatPercentage + charge;
  	
- 	
+ 	//return vat with it's charge added
+ 	return vatAmmount;
  }
 
 
