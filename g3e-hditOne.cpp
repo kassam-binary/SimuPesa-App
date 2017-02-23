@@ -1,4 +1,3 @@
-//program for SIMUPESA
 #include<iostream>
 #include<iomanip>
 using namespace std;
