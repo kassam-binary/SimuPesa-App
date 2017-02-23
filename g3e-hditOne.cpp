@@ -1,9 +1,10 @@
 //program for SIMUPESA
 #include<iostream>
+#include<iomanip>
 using namespace std;
 
 //declaration VAT calculating function "prototype function"
-float vatCalculating(float amount,float vat,float charge);
+float vatCalculating(float amount,float charge);
 int main (){
 	
 	//declaration of variables
@@ -17,7 +18,6 @@ int main (){
 	//allow user to enter the choice
 	returnToEnterChoice:cin>> userMainChoice;
 	cout<<endl;
-	
 	//checking the entered menu choice
 	switch(userMainChoice)
 	{
@@ -68,7 +68,11 @@ int main (){
 							//allow user to enter again amount
 							goto enterAmount;
 						}else{
-							cout<<"ndio hapa";
+							//cout<<"ndio hapa";
+							float fixedServiceCharge = 205;
+							cout<<"HUDUMA IMEKAMILIKA\n"<<"GHARAMA YA VAT NI TSH "<<vatCalculating (userAmmount, fixedServiceCharge)<<endl;
+							cout<<"GHARAMA YA SERVICE CHARGE NI TSH "<<fixedServiceCharge<<endl;
+							cout<<"AHSANTE KWA KUTUMIA HUDUMA YETU";
 						}
 
 					}else{
@@ -113,13 +117,15 @@ int main (){
 }
 
 //body of VAT function
- float vatCalculating (float amount,float vat,float charge){
+ float vatCalculating (float amount,float charge){
  	float addVatPercentage, vatAmmount;
+ 	float vat = 0.18;
  	addVatPercentage = amount * vat;
- 	vatAmmount = addVatPercentage + charge;
+ 	//adding fixed service charge which is 205
+ 	//vatAmmount = addVatPercentage + charge;
  	
  	//return vat with it's charge added
- 	return vatAmmount;
+ 	return addVatPercentage;
  }
 
 
