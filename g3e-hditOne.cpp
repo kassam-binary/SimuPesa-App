@@ -46,7 +46,8 @@ int main (){
 					break;
 				case 2:
 					//declaration of variables for storing user/customer 
-					int userBalance, userAmmount;
+					float userBalance;
+					float userAmmount;
 					//initialize 3400 balance for user/customer
 					userBalance = 3400;
 					cout<<"KARIBU DAWASCO ULIPE BILI YA MAJI\n";
