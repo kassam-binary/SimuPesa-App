@@ -7,8 +7,6 @@ float vatCalculating(float amount,float charge);
 int main (){
 	
 	//declaration of variables
-	// variable "userMainChoice" it will store entered user choice
-	// variable "subMenuChoice" it will store entered user choice from sub menu
 	int userMainChoice, subMenuChoice;;
 	//output the choice to the user in "SIMUPESA" application
 	cout<<"KARIBU KWENYE HUDUMA YA SIMUPESA\n"<<"CHAGUA\n";
