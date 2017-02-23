@@ -53,10 +53,18 @@ int main (){
 					cout<<"KARIBU DAWASCO ULIPE BILI YA MAJI\n";
 					enterAmount:cout<<"Ingiza kiasi cha pesa (TSH):  ";
 					cin >> userAmmount;
+					cout<<endl;
 					//checking if the purchased amount is greater than or equal to 305.00
 					if(userAmmount >= 305.00)
 					{
-						cout<<"ndio hapa";
+						if(userAmmount >= userBalance )
+						{
+							cout<<"SAMAHANI, HUWEZI KULIPA MAJI YA TSH "<<userAmmount<<"\nSALIO LAKO HALITOSHELEZI\n";
+							cout<<"SALIO LAKO NI TSH "<<userBalance<<endl<<endl;
+							goto enterAmount;
+						}else{
+							cout<<"ndio hapa";
+						}
 
 					}else{
 						//displaying the Error message to the user interface
