@@ -1,6 +1,9 @@
 //program for SIMUPESA
 #include<iostream>
 using namespace std;
+
+//declaration VAT calculating function
+float vatCalculating(float amount,float vat,float charge);
 int main (){
 	
 	//declaration of variables
@@ -59,8 +62,10 @@ int main (){
 					{
 						if(userAmmount >= userBalance )
 						{
+							//displaying Error message to the if entered greater amount than balance
 							cout<<"SAMAHANI, HUWEZI KULIPA MAJI YA TSH "<<userAmmount<<"\nSALIO LAKO HALITOSHELEZI\n";
 							cout<<"SALIO LAKO NI TSH "<<userBalance<<endl<<endl;
+							//allow user to enter again amount
 							goto enterAmount;
 						}else{
 							cout<<"ndio hapa";
