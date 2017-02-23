@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-//declaration VAT calculating function
+//declaration VAT calculating function "prototype function"
 float vatCalculating(float amount,float vat,float charge);
 int main (){
 	
@@ -110,5 +110,14 @@ int main (){
 		
 	}
 	
-	
 }
+
+//body of VAT function
+ float vatCalculating (float amount,float vat,float charge){
+ 	
+ 	
+ }
+
+
+
+
